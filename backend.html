@@ -92,3 +92,25 @@ public ResponseEntity&lt;String&gt; receiveSensorData(
 </footer>
 </body>
 </html>
+<section>
+ 
+    <h2>🧠 Core Service Logic – Parking Session Creation</h2>
+
+  <p>
+    This service method handles the creation of a parking session.
+    It validates parking spot availability, prevents duplicate parking,
+    and ensures transactional consistency using <strong>@Transactional</strong>.
+  </p>
+
+  <ul>
+    <li>Validates parking spot using spot number or QR code</li>
+    <li>Checks availability status before parking</li>
+    <li>Prevents duplicate parked vehicles</li>
+    <li>Uses transactional boundary for data consistency</li>
+  </ul>
+
+  <img src="assets/img/create-session-service.png"
+       alt="Parking session service logic"
+       style="width:100%; border-radius:12px; margin-top:12px;">
+</section>
+
