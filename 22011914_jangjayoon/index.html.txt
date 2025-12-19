@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backend Contribution – Smart Parking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+        section {
+            max-width: 1100px;
+            margin: 3rem auto;
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        h2 { color: #667eea; }
+        ul, ol { line-height: 1.8; }
+        img {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.9rem 1.8rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>Backend & System Integration</h1>
+    <p>Individual Project Evaluation Page</p>
+</header>
+
+<section>
+    <h2>👤 My Contribution</h2>
+    <p>
+        I was responsible for backend development and system integration.
+        I designed REST APIs, handled database logic,
+        and connected IoT sensor data to the backend server.
+    </p>
+</section>
+
+<section>
+    <h2>🛠 What I Implemented</h2>
+    <ul>
+        <li>Spring Boot backend server and REST APIs</li>
+        <li>MySQL database design and data processing</li>
+        <li>Automatic exit logic using sensor data</li>
+        <li>Real-time update via WebSocket</li>
+        <li>ESP32 (Wokwi) → Backend communication</li>
+    </ul>
+</section>
+
+<section>
+    <h2>🔗 Execution Flow</h2>
+    <ol>
+        <li>User registers vehicle</li>
+        <li>Backend stores entry data</li>
+        <li>ESP32 sends sensor data</li>
+        <li>Backend processes data</li>
+        <li>Automatic exit triggered</li>
+        <li>Frontend updates in real time</li>
+    </ol>
+</section>
+
+<section>
+    <h2>🖼 System Architecture</h2>
+    <img src="assets/img/architecture.png" alt="System Architecture">
+</section>
+
+<section>
+    <a href="backend.html" class="btn">View Backend Demo</a>
+</section>
+
+<footer>
+    © 2025 Individual Backend Project
+</footer>
+</body>
+</html>

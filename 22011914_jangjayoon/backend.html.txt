@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backend Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        section {
+            max-width: 1000px;
+            margin: 3rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+        h2 { color: #667eea; }
+        pre {
+            background: #1e1e1e;
+            color: #dcdcdc;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        video {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 1.6rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>Backend Demo & Code</h1>
+    <p>Execution Process</p>
+</header>
+
+<section>
+    <h2>💻 Core Backend Code</h2>
+    <pre>
+@PostMapping("/sensor")
+public ResponseEntity&lt;String&gt; receiveSensorData(
+        @RequestBody SensorDataRequest request) {
+
+    parkingService.processSensor(request);
+    return ResponseEntity.ok("Sensor data received");
+}
+    </pre>
+</section>
+
+<section>
+    <h2>🎬 Backend Demo Video</h2>
+    <video controls>
+        <source src="assets/video/backend-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<section>
+    <a href="index.html" class="btn">⬅ Back</a>
+</section>
+
+<footer>
+    © 2025 Individual Backend Project
+</footer>
+</body>
+</html>
