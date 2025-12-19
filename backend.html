@@ -32,11 +32,18 @@
             color: #dcdcdc;
             padding: 1rem;
             border-radius: 8px;
+            overflow-x: auto;
         }
         video {
             width: 100%;
             border-radius: 12px;
             margin-top: 1rem;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+            margin-top: 1rem;
+            border: 1px solid #ccc;
         }
         .btn {
             display: inline-block;
@@ -57,9 +64,10 @@
 </head>
 
 <body>
+
 <header>
-    <h1>IoT 프로젝트: 스마트 주차</h1>
-    <p>Backend Demo & Implementation</p>
+    <h1>IoT Project: Smart Parking System</h1>
+    <p>Individual Backend Implementation & Demo</p>
 </header>
 
 <section>
@@ -84,47 +92,43 @@ public ResponseEntity&lt;String&gt; receiveSensorData(
 </section>
 
 <section>
+    <h2>🧰 Backend Server Configuration</h2>
+    <p>
+        Spring Boot backend server configuration including port binding,
+        application name, and MySQL datasource settings deployed on EC2.
+    </p>
+    <img src="assets/img/server-config.png" alt="Server Configuration">
+</section>
+
+<section>
+    <h2>🧠 Core Service Logic – Parking Session Creation</h2>
+    <p>
+        This service method handles the creation of a parking session.
+        It validates parking spot availability, prevents duplicate parking,
+        and ensures transactional consistency using <strong>@Transactional</strong>.
+    </p>
+    <ul>
+        <li>Validates parking spot using spot number or QR code</li>
+        <li>Checks availability status before parking</li>
+        <li>Prevents duplicate parked vehicles</li>
+        <li>Uses transactional boundary for data consistency</li>
+    </ul>
+    <img src="assets/img/create-session-service.png"
+         alt="Parking Session Service Logic">
+</section>
+
+<section>
     <a href="index.html" class="btn">⬅ Back</a>
 </section>
 
 <footer>
     © 2025 Individual Backend Project
 </footer>
+
 </body>
 </html>
-<section>
 
-    <section>
-  <h2>🧰Backend Server Configuration</h2>
-  <p>
-    Spring Boot backend server configuration including port binding,
-    application name, and MySQL datasource settings deployed on EC2.
-  </p>
 
-  <img src="assets/img/server-config.png"
-       alt="Server Configuration"
-       style="max-width:100%; border:1px solid #ccc;">
-</section>
- 
-    <h2>🧠 Core Service Logic – Parking Session Creation</h2>
-
-  <p>
-    This service method handles the creation of a parking session.
-    It validates parking spot availability, prevents duplicate parking,
-    and ensures transactional consistency using <strong>@Transactional</strong>.
-  </p>
-
-  <ul>
-    <li>Validates parking spot using spot number or QR code</li>
-    <li>Checks availability status before parking</li>
-    <li>Prevents duplicate parked vehicles</li>
-    <li>Uses transactional boundary for data consistency</li>
-  </ul>
-
-  <img src="assets/img/create-session-service.png"
-       alt="Parking session service logic"
-       style="width:100%; border-radius:12px; margin-top:12px;">
-</section>
 
 
 
